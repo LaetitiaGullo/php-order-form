@@ -9,7 +9,7 @@ date_default_timezone_set('Europe/Paris');
 $express_delivery = date("H:i", strtotime("+30 minutes"));
 $normal_delivery = date("H:i", strtotime("+60 minutes"));
 
-if (isset($_POST["products"]) && $_SESSION["email"] && $_SESSION["street"] && $_SESSION["streetnumber"] && $_SESSION["city"] && $_SESSION["zipcode"] && $_SESSION["email"] != ""): ?>
+if ($totalValue != 0 && $_SESSION["email"] && $_SESSION["street"] && $_SESSION["streetnumber"] && $_SESSION["city"] && $_SESSION["zipcode"] && $_SESSION["email"] != ""): ?>
 
     <div class ="alert alert-success" role="alert">
         <h5>Your information :</h5>
@@ -32,7 +32,7 @@ if (isset($_POST["products"]) && $_SESSION["email"] && $_SESSION["street"] && $_
                     $totalValue += 5;
                     echo "Express : 30minutes ($express_delivery)";
                 } else {
-                    echo "Normal : 1hour ($normal_delivery)";
+                    echo "Standard : 1hour ($normal_delivery)";
                 }
                 ?>
             </li>
