@@ -19,6 +19,6 @@ function whatIsHappening() {
 ?>
 
 <?php
-require 'products.php';
-require 'validate-input.php';
-require 'form-view.php';
+require 'src/products.php';
+require 'src/validate-input.php';
+require 'src/form-view.php';
