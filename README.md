@@ -1,7 +1,7 @@
 # php-order-form
 
 ### URL of the project :
-Incoming
+https://pizzasorderform.herokuapp.com/
 
 ### Date of realization :
 March 2021
